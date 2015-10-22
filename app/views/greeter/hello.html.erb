@@ -1,4 +1,3 @@
 <h1>Greeter#hello</h1>
-<% names = ["zhangxu", "chendong", "liyu"] %>
-<h2>Hello <%= names.simple %> </h2>
-<p>Time now is <%= Time.now %></p>
+<h2>Hello <%= @name %> </h2>
+<p>Time now is <%= format_time(@current_time) %></p>
