@@ -6,7 +6,7 @@
         <th>Description</th>
     </tr>
     <% @courses.each do |course| %>
-        <tr>
+        <tr class="<%= cycle('odd', 'even') %>">
             <td><%= image_tag(course['smallIcon']) %></td>
             <td><%= course['name'] %></td>
             <td><%= course['description'] %></td>
